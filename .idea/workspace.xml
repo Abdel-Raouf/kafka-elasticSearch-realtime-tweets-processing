@@ -4,7 +4,6 @@
     <list default="true" id="3d1f51b5-9599-4c8e-b711-ea059ba81d45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/abdelraouf/twitter/kafka/TwitterProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/abdelraouf/twitter/kafka/TwitterProducer.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,20 +34,22 @@
   </component>
   <component name="ProjectId" id="1VZ2BW2l2A7JOrPM5sxYzf65Jda" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="10" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kafka" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="TwitterProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -64,15 +65,51 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2401" y="403" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1577524161431">
+      <screen x="1920" y="0" width="1280" height="1024" />
+    </state>
+    <state x="2401" y="403" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1053/1920.0.1280.1024@1920.0.1280.1024" timestamp="1577524161431" />
+    <state x="2243" y="239" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577526095099">
+      <screen x="1920" y="0" width="1280" height="1024" />
+    </state>
+    <state x="2243" y="239" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1920.1053/1920.0.1280.1024@1920.0.1280.1024" timestamp="1577526095099" />
+    <state x="2049" y="146" key="SettingsEditor" timestamp="1577526368495">
+      <screen x="1920" y="0" width="1280" height="1024" />
+    </state>
+    <state x="2049" y="146" key="SettingsEditor/0.27.1920.1053/1920.0.1280.1024@1920.0.1280.1024" timestamp="1577526368495" />
+    <state x="2216" y="338" key="com.intellij.ide.util.TipDialog" timestamp="1577526391343">
+      <screen x="1920" y="0" width="1280" height="1024" />
+    </state>
+    <state x="2216" y="338" key="com.intellij.ide.util.TipDialog/0.27.1920.1053/1920.0.1280.1024@1920.0.1280.1024" timestamp="1577526391343" />
+    <state x="2058" y="185" width="1102" height="798" key="new project wizard" timestamp="1577527277027">
+      <screen x="1920" y="0" width="1280" height="1024" />
+    </state>
+    <state x="2058" y="185" width="1102" height="798" key="new project wizard/0.27.1920.1053/1920.0.1280.1024@1920.0.1280.1024" timestamp="1577527277027" />
   </component>
 </project>
