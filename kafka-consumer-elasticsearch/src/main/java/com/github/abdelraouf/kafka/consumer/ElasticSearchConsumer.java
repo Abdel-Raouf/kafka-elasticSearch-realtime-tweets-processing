@@ -1,5 +1,6 @@
 package com.github.abdelraouf.kafka.consumer;
 
+import com.google.gson.JsonParser;
 import org.apache.http.HttpHost;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
@@ -72,6 +73,15 @@ public class ElasticSearchConsumer {
 
     };
 
+    private static JsonParser jsonParser = new JsonParser();
+    private static String extractIdFromTweet(String tweetJson){
+        //gson library
+        return jsonParser.parse(tweetJson)
+                .getAsJsonObject()
+                .get("id_str")
+                .getAsString();
+    };
+
     public static void main(String[] args) throws IOException {
         Logger logger = LoggerFactory.getLogger(ElasticSearchConsumer.class.getName());
 
@@ -83,19 +93,27 @@ public class ElasticSearchConsumer {
             ConsumerRecords<String,String> records =
                     consumer.poll(Duration.ofMillis(100)); // new in Kafka 2.0.0
             for(ConsumerRecord<String,String> record : records){
+
+                // 2 strategies
+                // kafka generic ID
+                //String id = record.topic() + "_" + record.partition() + "_" + record.offset();
+
+                //twitter feed specific id
+                String id = extractIdFromTweet(record.value());
+
                 //where we insert data into ElasticSearch
                 String jsonString = record.value();
 
                 //noinspection deprecation
                 IndexRequest indexRequest = new IndexRequest(
                         "twitter",
-                        "tweets"
+                        "tweets",
+                        id //this is to make our consumer idempotent
                 ).source(jsonString, XContentType.JSON);
 
                 IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
-                String id = indexResponse.getId();
 
-                logger.info(id);
+                logger.info(indexResponse.getId());
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
