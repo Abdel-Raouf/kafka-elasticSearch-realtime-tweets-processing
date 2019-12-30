@@ -87,6 +87,7 @@ public class TwitterProducer {
     String consumerSecret = "jsa59uliuyv9wZZYD6tnyQtXZtSN4QsZM79aPxZylbLCpFOJls";
     String token = "1210153537134563328-JNMnv3LTVJUSxfMFWwp4D7VBueToFe";
     String secret = "mQC8y1N6PN6FQQoQUoinnwDSkYKoZalUMSrg2eK3zmqMJ";
+
     List<String> terms = Lists.newArrayList("bitcoin", "egypt", "politics", "sport", "soccer");
 
 
